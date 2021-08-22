@@ -13205,4 +13205,15 @@ h3, .h3 {
   background-size: cover;
 }
 
+.demo-picture {
+  height: 628px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-cover {
+  margin-left: -50px;
+}
+
 /*# sourceMappingURL=all.css.map */
