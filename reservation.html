@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reservation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--順序要放對，不然無法成功套入-->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-success bg-success">
+      <div class="container justify-content-between">
+        <a class="navbar-brand " href="index.html"><img src="https://upload.cc/i1/2021/08/22/Xd47n2.png" alt="logo"></a>
+        <div class="menu-btn ">
+          <!-- 漢堡選單如下 -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons text-primary">menu</span>
+          </button>
+        </div>
+        <!--選單內容 -->
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="curriculum.html">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">當月課表</a>
+            </li>
+          </ul>
+          <ul class="btn-group d-block d-lg-none">
+            <li><a class="" href="#" role="button">立即預約</a></li>
+            <li><a class="" href="#" role="button">聯絡我們</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-flex justify-content-md-center">
+          <ul class="btn-group">
+            <li><a class="btn btn-outline-primary submitbutton me-4 rounded-pill" href="#" role="button">立即預約</a></li>
+            <li><a class="btn btn-outline-primary submitbutton rounded-pill" href="#" role="button">聯絡我們</a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </nav>
+
+    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-sm-block">
+    <li class=""><a href="#"><i class="fab fa-facebook fa-3x "></i></a></li>
+    <li class="mx-3 my-2"><a href="#"><i class="fab fa-line fa-3x"></i></a></li>
+    <li class="mx-3 my-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+  </ul>
+
+    <div class="main py-8">
+    <div class="container">
+        <h3 class="text-center pb-2">立即預約</h3>
+        <ul class="d-flex justify-content-center ps-0 mb-9 ">
+            <li><a href="reservation.html"class="btn btn-secondary btn-lg text-light rounded-pill me-2 px-5">選擇方案</a></li>
+            <li><a href="#" class="btn btn-primary btn-lg text-light rounded-pill me-2 px-5">填寫資料</a></li>
+            <li><a href="#" class="btn btn-primary btn-lg text-light rounded-pill px-5">完成預約</a></li>
+        </ul>
+        <ul class="row pb-6">
+            <li class="col-4">
+              <div class="card">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" class="card-img-s" alt="women doing yoga">
+                <div class="card-body p-4">
+                  <h4 class="card-title text-center">首次體驗</h4><span class="d-block subtitle text-center mt-1">NT $450 / 次</span>
+                  <p class="card-text text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100">選擇課程</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true" class="card-img-s" alt="women doing yog">
+                <div class="card-body p-4">
+                  <h4 class="card-title text-center">短期體驗</h4><span class="d-block subtitle text-center mt-1">NT $1800 / 月</span>
+                  <p class="card-text text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100">選擇課程</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" class="card-img-s" alt="women doing yog">
+                <div class="card-body p-4">
+                  <h4 class="card-title text-center">長期體驗</h4><span class="d-block subtitle text-center mt-1">NT $5600 / 季</span>
+                  <p class="card-text text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100">選擇課程</a>
+                </div>
+              </div>
+            </li>
+        </ul>
+        <div class="resevation-note py-7 lh-lg">
+            <h3 class="text-center pb-2">預約須知</h3>
+            <ul class="resevation-note-content text-secondary m-auto w-40 px-1">
+                <li>
+                    <p>1. 如果有特殊體質、特殊狀況，請主動告知。</p>
+                </li>
+                <li>
+                    <p>2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</p>
+                </li>
+                <li>
+                    <p>3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</p>
+                </li>
+                <li>
+                    <p>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+    <footer class="footer bg-secondary  pb-6">
+      <div class="container d-flex justify-content-between py-6">
+        <h2 class="text-light fs-3">現在訂閱，獲得課程優惠碼！</h2>
+        <div class=" input-group textsubmit">
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email"      aria-describedby="basic-addon2">
+            <button class="btn btn-primary submitbutton text-light radius-left-0 radius-right-0" type="button">訂閱</button>
+        </div>
+      </div>
+      <div class="border-top border-light w-100"></div>
+      <div class="footer-sub-area container d-flex justify-content-between mt-5">
+        <nav class=" nav flex-column text-light">
+          <h2 class="fs-4">DOYOGA</h2>
+          <ul>
+            <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
+            <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
+            <li><a class="nav-link text-light px-0" href="#">當月課表</a></li>
+          </ul>
+        </nav>
+        <div class="copyright text-light align-self-end">© 2021. All Rights Reserved.</div>
+        <ul class="media-bar d-flex">
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb" class="media-icon-ss me-2"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig" class="media-icon-ss me-2"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt="line" class="media-icon-ss"></a></li>
+        </ul>
+      </div>
+     
+    
+         
+
+    
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+    
+  </body>
+
+</html>
