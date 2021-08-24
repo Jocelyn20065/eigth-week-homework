@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reservation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--順序要放對，不然無法成功套入-->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-success bg-success">
+      <div class="container justify-content-between">
+        <a class="navbar-brand " href="index.html"><img src="https://upload.cc/i1/2021/08/22/Xd47n2.png" alt="logo"></a>
+        <div class="menu-btn ">
+          <!-- 漢堡選單如下 -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons text-primary">menu</span>
+          </button>
+        </div>
+        <!--選單內容 -->
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="curriculum.html">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">當月課表</a>
+            </li>
+          </ul>
+          <ul class="btn-group d-block d-lg-none">
+            <li><a class="" href="#" role="button">立即預約</a></li>
+            <li><a class="" href="#" role="button">聯絡我們</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-flex justify-content-md-center">
+          <ul class="btn-group">
+            <li><a class="btn btn-outline-primary submitbutton me-4 rounded-pill" href="#" role="button">立即預約</a></li>
+            <li><a class="btn btn-outline-primary submitbutton rounded-pill" href="#" role="button">聯絡我們</a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </nav>
+
+    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-sm-block">
+    <li class=""><a href="#"><i class="fab fa-facebook fa-3x "></i></a></li>
+    <li class="mx-3 my-2"><a href="#"><i class="fab fa-line fa-3x"></i></a></li>
+    <li class="mx-3 my-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+  </ul>
+
+    <div class="main py-8 container">
+    <h3 class="text-center pb-2">立即預約</h3>
+    <ul class="d-flex justify-content-center ps-0 pb-6">
+        <li><a href="reservation-Done.html"class="btn btn-primary btn-lg text-light rounded-pill me-2 px-5">選擇方案</a></li>
+        <li><a href="reservation-Done.html" class="btn btn-primary btn-lg text-light rounded-pill me-2 px-5">填寫資料</a></li>
+        <li><a href="reservation-Done.html" class="btn btn-secondary btn-lg text-light rounded-pill px-5">完成預約</a></li>
+    </ul>
+    <div class="title-area text-center pt-1">
+        <span class="material-icons fs-1 text-secondary pb-9">check_circle_outline</span>
+        <h4>已完成預約，以下是您的預約資訊:</h4>
+    </div>
+    <div class="row content-area">
+        <div class="offset-md-3 col-md-6">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button  btn-cus text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        預約資訊
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2 class="fs-6 text-secondary pb-2 font-weight-bold">您預約的是<span class="fs-5 text-primary">首次體驗課程-基礎</span></h3>
+                        <ul class="fs-6 text-secondary lh-lg">
+                            <li>上課預約報到日：2021/07/21</li>
+                            <li>預約人：Joanne Chen</li>
+                            <li>年齡：18 歲</li>
+                            <li>性別：女</li>
+                            <li>電子信箱：example123@gmail.com</li>
+                            <li>手機號碼：0912-345-678</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row remind text-secondary">
+        <div class="offset-md-4 col-md-4">
+            <h4 class="text-center pt-4 pb-2">上課注意事項</h4>
+            <p>第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <a href="index.html"class="btn btn-primary btn-lg text-light w-100 my-7">返回首頁</a>
+        </div>
+        
+    </div>
+</div>
+
+    <footer class="footer bg-secondary  pb-6">
+      <div class="container d-flex justify-content-between py-6">
+        <h2 class="text-light fs-3">現在訂閱，獲得課程優惠碼！</h2>
+        <div class=" input-group textsubmit">
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email"      aria-describedby="basic-addon2">
+            <button class="btn btn-primary submitbutton text-light radius-left-0 radius-right-0" type="button">訂閱</button>
+        </div>
+      </div>
+      <div class="border-top border-light w-100"></div>
+      <div class="footer-sub-area container d-flex justify-content-between mt-5">
+        <nav class=" nav flex-column text-light">
+          <h2 class="fs-4">DOYOGA</h2>
+          <ul>
+            <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
+            <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
+            <li><a class="nav-link text-light px-0" href="#">當月課表</a></li>
+          </ul>
+        </nav>
+        <div class="copyright text-light align-self-end">© 2021. All Rights Reserved.</div>
+        <ul class="media-bar d-flex">
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb" class="media-icon-ss me-2"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig" class="media-icon-ss me-2"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt="line" class="media-icon-ss"></a></li>
+        </ul>
+      </div>
+     
+    
+         
+
+    
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+    
+  </body>
+
+</html>

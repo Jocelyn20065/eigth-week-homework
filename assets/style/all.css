@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
@@ -5581,7 +5582,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ad9495'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -5594,7 +5595,7 @@ fieldset:disabled .btn {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -14796,6 +14797,66 @@ fieldset:disabled .btn {
   width: 40%;
 }
 
+.w-30 {
+  width: 30%;
+}
+
+.form-control-c::-webkit-input-placeholder {
+  /* CSS 3 標準 */
+  color: #C0A4A5;
+  font-size: 16px;
+}
+
+.form-control-c::-moz-placeholder {
+  /* CSS 3 標準 */
+  color: #C0A4A5;
+  font-size: 16px;
+}
+
+.form-control-c:-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: #C0A4A5;
+  font-size: 16px;
+}
+
+.form-control-c::-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: #C0A4A5;
+  font-size: 16px;
+}
+
+.form-control-c::placeholder {
+  /* CSS 3 標準 */
+  color: #C0A4A5;
+  font-size: 16px;
+}
+
+.form-control-c::-webkit-input-placeholder {
+  /* Chrome, Safari */
+  color: #C0A4A5;
+  font-size: 16px;
+}
+
+.hover-border-w {
+  border-radius: 10px;
+  border-color: transparent;
+  border-width: 3px;
+}
+
+.hover-border-w:hover {
+  border-color: #fff;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.hover-icon-w {
+  color: #00000029;
+}
+
+.hover-icon-w:hover {
+  color: #FFFFFF;
+}
+
 *,
 *::before,
 *::after {
@@ -14862,6 +14923,21 @@ h4, .h4 {
 .subtitle {
   color: #C0A4A5;
   font-size: 20px;
+}
+
+.btn-cus {
+  background-color: #C0A4A5;
+  color: #fff;
+}
+
+.btn-cus:not(.collapsed) {
+  color: #fff;
+  background-color: #907A7B;
+}
+
+.btn-cus:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .swiper-container {
