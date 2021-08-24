@@ -21,3 +21,33 @@
 .w-40{
     width: 40%;
 }
+.w-30{
+    width:30%;
+}
+
+.form-control-c::placeholder { /* CSS 3 標準 */
+    color: #C0A4A5;
+    font-size: 16px;
+  }
+  
+  .form-control-c::-webkit-input-placeholder { /* Chrome, Safari */
+    color: #C0A4A5;
+    font-size: 16px;
+  }
+
+.hover-border-w{
+    border-radius: 10px;
+    border-color: transparent;
+    border-width: 3px;
+    &:hover{
+    border-color:#fff;
+    box-shadow: 0px 3px 6px #00000029;
+
+    }
+}
+.hover-icon-w{
+    color: #00000029;
+    &:hover{
+        color: #FFFFFF;
+    }
+}

@@ -17,3 +17,16 @@
     color: #C0A4A5;
     font-size: 20px;
 }
+
+.btn-cus{
+    background-color:#C0A4A5;
+    color:#fff;
+    &:not(.collapsed) {
+    color:#fff;
+     background-color:#907A7B;}
+    &:focus{
+      box-shadow:none;
+    }
+   
+  }
+   
