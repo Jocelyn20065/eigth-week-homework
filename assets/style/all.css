@@ -15429,6 +15429,22 @@ h4, .h4 {
   padding: 0;
 }
 
+.card-img-lg {
+  height: 252px;
+  width: 252px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .card-img-lg {
+    height: 455px;
+    width: 455px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .card-img-m {
   height: 252px;
   width: auto;
