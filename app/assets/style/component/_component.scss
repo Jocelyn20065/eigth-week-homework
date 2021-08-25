@@ -1,17 +1,34 @@
 .card-img-m{
-    height:420px;
+    height:252px;
     width:auto;
     object-fit: cover;
+    @include media-breakpoint-up(lg) {
+        height:420px;
+        width:auto;
+     }
+    
 }
+
+
+
 .card-img-m2{
-    height:444px;
+    height:266px;
     width:auto;
     object-fit: cover;
+    @include media-breakpoint-up(lg) {
+        height:444px;
+        width:auto;
+     }
 }
+
 .card-img-s{
-    height: 250px;
+    height:117px;
     width:auto;
     object-fit: cover;
+    @include media-breakpoint-up(lg) {
+        height:207px;
+        width:auto;
+     }
 }
 .subtitle{
     color: #C0A4A5;
@@ -30,3 +47,8 @@
    
   }
    
+
+
+.scroller{
+   overflow-x:auto;
+}

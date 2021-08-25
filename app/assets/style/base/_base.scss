@@ -1,6 +1,12 @@
 *,*::before,*::after{
     box-sizing:border-box ;
 }
+
+body{
+    overflow-x: hidden;
+}
+
+
 ul{
     list-style: none;
     padding:0;
@@ -25,6 +31,9 @@ h3{
     font-size: 28px;
     font-weight:bold;
     color:#907A7B;
+    @include media-breakpoint-up(lg) {
+        font-size: 20px;
+     }
 }
 h4{
     font-size: 20px;
