@@ -1,3 +1,18 @@
+.card-img-lg{
+    height:252px;
+    width:252px;
+    object-fit: cover;
+    @include media-breakpoint-up(lg) {
+        height:455px;
+        width:455px;
+        object-fit: cover;
+     }
+    
+}
+
+
+
+
 .card-img-m{
     height:252px;
     width:auto;
