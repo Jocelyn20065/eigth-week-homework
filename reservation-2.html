@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--順序要放對，不然無法成功套入-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"> <!--順序要放對，不然無法成功套入-->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -28,19 +28,19 @@
         <!--選單內容 -->
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">課程介紹</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="curriculum.html">瑜珈空間</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">當月課表</a>
             </li>
           </ul>
           <ul class="btn-group d-block d-lg-none">
-            <li><a class="" href="#" role="button">立即預約</a></li>
-            <li><a class="" href="#" role="button">聯絡我們</a></li>
+            <li><a class="nav-link" href="#" role="button">立即預約</a></li>
+            <li><a class="nav-link" href="#" role="button">聯絡我們</a></li>
           </ul>
         </div>
         <div class="d-none d-lg-flex justify-content-md-center">
@@ -53,23 +53,23 @@
       </div>
     </nav>
 
-    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-sm-block">
+    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-lg-block z-index-3">
     <li class=""><a href="#"><i class="fab fa-facebook fa-3x "></i></a></li>
     <li class="mx-3 my-2"><a href="#"><i class="fab fa-line fa-3x"></i></a></li>
     <li class="mx-3 my-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
   </ul>
 
     <div class="main py-8">
-    <div class="container">
+    <div class="container-fluid">
         <h3 class="text-center pb-2">立即預約</h3>
         <ul class="d-flex justify-content-center ps-0 pb-6">
-            <li><a href="reservation.html"class="btn btn-primary btn-lg text-light rounded-pill me-2 px-5">選擇方案</a></li>
-            <li><a href="reservation-2.html" class="btn btn-secondary btn-lg text-light rounded-pill me-2 px-5">填寫資料</a></li>
-            <li><a href="reservation-2.html" class="btn btn-primary btn-lg text-light rounded-pill px-5"  >完成預約</a></li>
+            <li><a href="reservation.html"class="btn btn-primary btn-lg text-light rounded-pill me-2 me-2 px-md-5">選擇方案</a></li>
+            <li><a href="reservation-2.html" class="btn btn-secondary btn-lg text-light rounded-pill me-2 me-2 px-md-5">填寫資料</a></li>
+            <li><a href="reservation-2.html" class="btn btn-primary btn-lg text-light rounded-pill me-2 px-md-5"  >完成預約</a></li>
         </ul>
         <h4 class="fs-6 text-secondary text-center">您選擇的是<span class="fs-5 text-primary">首次體驗課程-基礎</span></h4>
         <div class="row">
-            <div class="offset-md-4 col-md-4">
+            <div class="col-md-6 offset-md-3 offset-lg-4 col-lg-4">
                 <form action="reservation-Done.html" class=" text-secondary">
                    <h2 class="fs-6 pt-6 pb-3">1. 是否接觸過瑜珈?</h2>
                    <div class="check-group">
@@ -166,7 +166,7 @@
 </div>
 
     <footer class="footer bg-secondary  pb-6">
-      <div class="container d-flex justify-content-between py-6">
+      <div class="container-fluid d-block d-md-flex justify-content-md-between py-6">
         <h2 class="text-light fs-3">現在訂閱，獲得課程優惠碼！</h2>
         <div class=" input-group textsubmit">
           <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email"      aria-describedby="basic-addon2">
@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="border-top border-light w-100"></div>
-      <div class="footer-sub-area container d-flex justify-content-between mt-5">
+      <div class="footer-sub-area container-fluid d-flex justify-content-between mt-5">
         <nav class=" nav flex-column text-light">
           <h2 class="fs-4">DOYOGA</h2>
           <ul>
@@ -182,8 +182,9 @@
             <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
             <li><a class="nav-link text-light px-0" href="#">當月課表</a></li>
           </ul>
+          <div class="copyright text-light d-block d-md-none">© 2021. All Rights Reserved.</div>
         </nav>
-        <div class="copyright text-light align-self-end">© 2021. All Rights Reserved.</div>
+        <div class="copyright text-light d-none d-md-inline align-self-md-end">© 2021. All Rights Reserved.</div>
         <ul class="media-bar d-flex">
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb" class="media-icon-ss me-2"></a></li>
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig" class="media-icon-ss me-2"></a></li>
@@ -197,7 +198,7 @@
     
     </footer>
     <script src="./assets/js/vendors.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
     
   </body>

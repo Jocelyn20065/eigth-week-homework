@@ -4,11 +4,12 @@ $(function () {
   console.log('Hello Bootstrap5');
 });
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  }
+  },
+  grabCursor: true
 });
 //# sourceMappingURL=all.js.map

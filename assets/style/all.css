@@ -15313,8 +15313,14 @@ fieldset:disabled .btn {
   text-align: center;
 }
 
-.w-40 {
-  width: 40%;
+.w-md-40 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .w-md-40 {
+    width: 40%;
+  }
 }
 
 .w-30 {
@@ -15377,6 +15383,10 @@ fieldset:disabled .btn {
   color: #FFFFFF;
 }
 
+.z-index-3 {
+  z-index: 3 !important;
+}
+
 *,
 *::before,
 *::after {
@@ -15386,6 +15396,7 @@ fieldset:disabled .btn {
 
 body {
   overflow-x: hidden;
+  padding: 0;
 }
 
 ul {
@@ -15413,12 +15424,6 @@ h3, .h3 {
   color: #907A7B;
 }
 
-@media (min-width: 992px) {
-  h3, .h3 {
-    font-size: 20px;
-  }
-}
-
 h4, .h4 {
   font-size: 20px;
   font-weight: bold;
@@ -15430,8 +15435,8 @@ h4, .h4 {
 }
 
 .card-img-lg {
-  height: 252px;
-  width: 252px;
+  height: 150px;
+  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -15446,17 +15451,10 @@ h4, .h4 {
 }
 
 .card-img-m {
-  height: 252px;
+  height: 420px;
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (min-width: 992px) {
-  .card-img-m {
-    height: 420px;
-    width: auto;
-  }
 }
 
 .card-img-m2 {
@@ -15483,7 +15481,27 @@ h4, .h4 {
 @media (min-width: 992px) {
   .card-img-s {
     height: 207px;
-    width: auto;
+  }
+}
+
+.card-img-s2 {
+  width: 100%;
+  height: 238px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.protait-pic {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .protait-pic {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -15511,7 +15529,7 @@ h4, .h4 {
   overflow-x: auto;
 }
 
-.swiper-container {
+.swiper {
   width: 100%;
   height: 100%;
   overflow: hidden;

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--順序要放對，不然無法成功套入-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"> <!--順序要放對，不然無法成功套入-->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -28,19 +28,19 @@
         <!--選單內容 -->
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">課程介紹</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="curriculum.html">瑜珈空間</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">當月課表</a>
             </li>
           </ul>
           <ul class="btn-group d-block d-lg-none">
-            <li><a class="" href="#" role="button">立即預約</a></li>
-            <li><a class="" href="#" role="button">聯絡我們</a></li>
+            <li><a class="nav-link" href="#" role="button">立即預約</a></li>
+            <li><a class="nav-link" href="#" role="button">聯絡我們</a></li>
           </ul>
         </div>
         <div class="d-none d-lg-flex justify-content-md-center">
@@ -53,55 +53,231 @@
       </div>
     </nav>
 
-    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-sm-block">
+    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-lg-block z-index-3">
     <li class=""><a href="#"><i class="fab fa-facebook fa-3x "></i></a></li>
     <li class="mx-3 my-2"><a href="#"><i class="fab fa-line fa-3x"></i></a></li>
     <li class="mx-3 my-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
   </ul>
 
     <div class="main py-8">
-    <div class="container">
+    <div class="container-fluid">
         <h3 class="text-center pb-2">立即預約</h3>
         <ul class="d-flex justify-content-center ps-0 mb-9 ">
-            <li><a href="reservation.html"class="btn btn-secondary btn-lg text-light rounded-pill me-2 px-5">選擇方案</a></li>
-            <li><a href="reservation.html" class="btn btn-primary btn-lg text-light rounded-pill me-2 px-5">填寫資料</a></li>
-            <li><a href="reservation.html" class="btn btn-primary btn-lg text-light rounded-pill px-5">完成預約</a></li>
+            <li><a href="reservation.html"class="btn btn-secondary btn-lg text-light rounded-pill me-2 px-md-5">選擇方案</a></li>
+            <li><a href="reservation.html" class="btn btn-primary btn-lg text-light rounded-pill me-2 px-md-5">填寫資料</a></li>
+            <li><a href="reservation.html" class="btn btn-primary btn-lg text-light rounded-pill px-md-5">完成預約</a></li>
         </ul>
-        <ul class="row pb-6">
-            <li class="col-4">
+        <!--desktop & phone mode-->
+        <ul class="row pb-6 d-flex d-md-none d-lg-flex">
+            <li class="col-12 col-lg-4 mb-3 mb-lg-0">
               <div class="card">
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" class="card-img-s" alt="women doing yoga">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" class="card-img-s2" alt="women doing yoga">
                 <div class="card-body p-4">
                   <h4 class="card-title text-center">首次體驗</h4><span class="d-block subtitle text-center mt-1">NT $450 / 次</span>
                   <p class="card-text text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                  <a href="#" class="btn btn-primary text-light mt-7 w-100"data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">選擇課程</a>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100 d-none d-lg-block"data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">選擇課程</a>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100 d-block d-lg-none"data-bs-toggle="collapse" data-bs-target="#phone-course-option" aria-expanded="false" aria-controls="phone-course-option">選擇課程</a>
+                </div>
+              </div>
+              <!--課程階級選單(點擊縮放) phone mode-->
+              <div class="collapse" id="phone-course-option">
+                <div class="course-level bg-secondary">
+                  <h3 class="text-center pt-7 pb-6 text-light">選擇課程階級</h3>
+                  <ul class="d-flex flex-column">
+                    <li class="basic-course m-3">
+                      <a href="reservation-2.html" class="card card-body text-light text-decoration-none bg-primary hover-border-w p-4">
+                        <div class="title-area d-flex justify-content-md-between">
+                          <h3 class="text-light">基礎 Basic</h3>
+                          <span class="material-icons fs-2 hover-icon-w">check_circle_outline</span>
+                        </div>
+                        <div class="subtitle text-light">
+                          <h5 class="fs-6">基礎課程 <span class="bg-secondary rounded-pill px-2 py-1"><small>60 min</small></span></h5>
+                        </div>
+                        <ul class="content">
+                          <li>・入體位法動作解說</li>
+                          <li>・瑜珈基礎動作、順位</li>
+                          <li>・瑜珈基礎動作、順位</li>
+                        </ul>
+                    </a>
+                    </li>
+                    <li class="basic-course text-light m-3">
+                      <a href="#" class="card card-body text-light text-decoration-none bg-primary hover-border-w p-4">
+                        <div class="title-area d-flex justify-content-md-between">
+                          <h3 class="text-light">中階 Intermediate</h3>
+                          <span class="material-icons fs-2 hover-icon-w">check_circle_outline</span>
+                        </div>
+                        <div class="subtitle text-light">
+                          <h5 class="fs-6">艾揚格、哈達、寰宇<span class="bg-secondary rounded-pill px-2 py-1"><small>60 min</small></span></h5>
+                        </div>
+                        <ul class="content">
+                          <li>・刺激身體七個層次為核心</li>
+                          <li>・結合流暢體位法練習、呼吸、觀想</li>
+                          <li>・適合半年以上練習者</li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li class="basic-course text-light m-3">
+                      <a href="#" class="card card-body text-light text-decoration-none bg-primary hover-border-w p-4">
+                        <div class="title-area d-flex justify-content-md-between">
+                          <h3 class="text-light">高階 Advanced</h3>
+                          <span class="material-icons fs-2 hover-icon-w">check_circle_outline</span>
+                        </div>
+                        <div class="subtitle text-light">
+                          <h5 class="fs-6">阿斯坦加、陰陽<span class="bg-secondary rounded-pill px-2 py-1"><small>60 min</small></span></h5>
+                        </div>
+                        <ul class="content">
+                          <li>・充分打開身體每個部位</li>
+                          <li>・顯著提升力量與柔軟度</li>
+                          <li>・適合一年以上練習者</li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-12 col-lg-4 mb-3 mb-lg-0">
               <div class="card">
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true" class="card-img-s" alt="women doing yog">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true" class="card-img-s2" alt="women doing yog">
                 <div class="card-body p-4">
                   <h4 class="card-title text-center">短期體驗</h4><span class="d-block subtitle text-center mt-1">NT $1800 / 月</span>
                   <p class="card-text text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
-                  <a class="btn btn-primary text-light mt-7 w-100" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">選擇課程</a>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100 d-none d-lg-block"data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">選擇課程</a>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100 d-block d-lg-none">選擇課程</a>
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-12 col-lg-4 mb-3 mb-lg-0">
               <div class="card">
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" class="card-img-s" alt="women doing yog">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" class="card-img-s2" alt="women doing yog">
                 <div class="card-body p-4">
                   <h4 class="card-title text-center">長期體驗</h4><span class="d-block subtitle text-center mt-1">NT $5600 / 季</span>
                   <p class="card-text text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
-                  <a href="#" class="btn btn-primary text-light mt-7 w-100" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">選擇課程</a>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100 d-none d-lg-block"data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">選擇課程</a>
+                  <a href="#" class="btn btn-primary text-light mt-7 w-100 d-block d-lg-none">選擇課程</a>
                 </div>
               </div>
             </li>
         </ul>
+        <!--table mode-->
+        <ul class="d-lg-none d-md-block d-none">
+          <li>
+            <div class="card my-4">
+              <div class="row g-0">
+                <div class="col-6">
+                  <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" class="img-fluid rounded-start card-img-s2" alt="women doing yoga">
+                </div>
+                <div class="col-6">
+                  <div class="card-body p-4">
+                    <h4 class="card-title fs-5">首次體驗</h4><span class="d-block subtitle mt-1">NT $450 / 次</span>
+                    <p class=" text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                    <a href="reservation.html" class="btn btn-lg btn-primary text-light mt-4 w-100" data-bs-toggle="collapse" data-bs-target="#tablet-course-option" aria-expanded="false" aria-controls="tablet-course-option">選擇課程</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!--課程階級選單(點擊縮放) tablet mode-->
+            <div class="collapse" id="tablet-course-option">
+              <div class="course-level pb-6 bg-secondary">
+                <h3 class="text-center pt-md-7 pb-6 text-light">選擇課程階級</h3>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card" style="width:330px;margin-left:30px">
+                        <a href="reservation-2.html" class="card card-body text-light text-decoration-none bg-primary hover-border-w p-4">
+                          <div class="title-area d-flex justify-content-md-between">
+                            <h3 class="text-light">基礎 Basic</h3>
+                            <span class="material-icons fs-2 hover-icon-w">check_circle_outline</span>
+                          </div>
+                          <div class="subtitle text-light">
+                            <h5 class="fs-6">基礎課程 <span class="bg-secondary rounded-pill px-2 py-1"><small>60 min</small></span></h5>
+                          </div>
+                          <ul class="content">
+                            <li>・入體位法動作解說</li>
+                            <li>・瑜珈基礎動作、順位</li>
+                            <li>・瑜珈基礎動作、順位</li>
+                          </ul>
+                        </a>
+                      </div>
 
-     
-        <!--課程階級選單(點擊縮放)-->
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="card" style="width:330px;margin-left:30px">
+                        <a href="reservation-2.html" class="card card-body text-light text-decoration-none bg-primary hover-border-w p-4">
+                          <div class="title-area d-flex justify-content-md-between">
+                            <h3 class="text-light">中階 Intermediate</h3>
+                            <span class="material-icons fs-2 hover-icon-w">check_circle_outline</span>
+                          </div>
+                          <div class="subtitle text-light">
+                            <h5 class="fs-6">艾揚格、哈達、寰宇<span class="bg-secondary rounded-pill px-2 py-1"><small>60 min</small></span></h5>
+                          </div>
+                          <ul class="content">
+                            <li>・刺激身體七個層次為核心</li>
+                            <li>・結合流暢體位法練習、呼吸、觀想</li>
+                            <li>・適合半年以上練習者</li>
+                          </ul>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card" style="width:330px;margin-left:30px">
+                        <a href="reservation-2.html" class="card card-body text-light text-decoration-none bg-primary hover-border-w p-4">
+                          <div class="title-area d-flex justify-content-md-between">
+                            <h3 class="text-light">高階 Advanced</h3>
+                            <span class="material-icons fs-2 hover-icon-w">check_circle_outline</span>
+                          </div>
+                          <div class="subtitle text-light">
+                            <h5 class="fs-6">阿斯坦加、陰陽<span class="bg-secondary rounded-pill px-2 py-1"><small>60 min</small></span></h5>
+                          </div>
+                          <ul class="content">
+                            <li>・充分打開身體每個部位</li>
+                            <li>・顯著提升力量與柔軟度</li>
+                            <li>・適合一年以上練習者</li>
+                          </ul>
+                         </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+          </div>
+          </li>
+          <li>
+            <div class="card my-4">
+              <div class="row g-0">
+                <div class="col-6">
+                  <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true" class="img-fluid rounded-start card-img-s2" alt="women doing yoga">
+                </div>
+                <div class="col-6">
+                  <div class="card-body p-4">
+                    <h4 class="card-title fs-5">短期體驗</h4><span class="d-block subtitle mt-1">NT $1800 / 月</span>
+                    <p class=" text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                    <a href="reservation.html" class="btn btn-lg btn-primary text-light mt-4 w-100">選擇課程</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card my-4">
+              <div class="row g-0">
+                <div class="col-6">
+                  <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" class="img-fluid rounded-start card-img-s2" alt="women doing yoga">
+                </div>
+                <div class="col-6">
+                  <div class="card-body p-4">
+                    <h4 class="card-title fs-5">長期體驗</h4><span class="d-block subtitle mt-1">NT $5600 / 季</span>
+                    <p class=" text-secondary fs-6 pt-2">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                    <a href="reservation.html" class="btn btn-lg btn-primary text-light mt-4 w-100">選擇課程</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!--課程階級選單(點擊縮放) desktop mode-->
         <div class="collapse" id="collapseExample">
           <div class="course-level bg-secondary">
             <h3 class="text-center pt-md-7 pb-md-6 text-light">選擇課程階級</h3>
@@ -160,37 +336,9 @@
         <!--課程階級選單(點擊縮放) end.-->
 
 
-        
-        
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="resevation-note py-7 lh-lg">
             <h3 class="text-center pb-2">預約須知</h3>
-            <ul class="resevation-note-content text-secondary m-auto w-40 px-1">
+            <ul class="resevation-note-content text-secondary m-auto w-md-40 px-1">
                 <li>
                     <p>1. 如果有特殊體質、特殊狀況，請主動告知。</p>
                 </li>
@@ -206,11 +354,10 @@
             </ul>
         </div>
     </div>
-    
 </div>
 
     <footer class="footer bg-secondary  pb-6">
-      <div class="container d-flex justify-content-between py-6">
+      <div class="container-fluid d-block d-md-flex justify-content-md-between py-6">
         <h2 class="text-light fs-3">現在訂閱，獲得課程優惠碼！</h2>
         <div class=" input-group textsubmit">
           <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email"      aria-describedby="basic-addon2">
@@ -218,7 +365,7 @@
         </div>
       </div>
       <div class="border-top border-light w-100"></div>
-      <div class="footer-sub-area container d-flex justify-content-between mt-5">
+      <div class="footer-sub-area container-fluid d-flex justify-content-between mt-5">
         <nav class=" nav flex-column text-light">
           <h2 class="fs-4">DOYOGA</h2>
           <ul>
@@ -226,8 +373,9 @@
             <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
             <li><a class="nav-link text-light px-0" href="#">當月課表</a></li>
           </ul>
+          <div class="copyright text-light d-block d-md-none">© 2021. All Rights Reserved.</div>
         </nav>
-        <div class="copyright text-light align-self-end">© 2021. All Rights Reserved.</div>
+        <div class="copyright text-light d-none d-md-inline align-self-md-end">© 2021. All Rights Reserved.</div>
         <ul class="media-bar d-flex">
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb" class="media-icon-ss me-2"></a></li>
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig" class="media-icon-ss me-2"></a></li>
@@ -241,7 +389,7 @@
     
     </footer>
     <script src="./assets/js/vendors.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
     
   </body>
