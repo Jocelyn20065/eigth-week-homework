@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"> <!--順序要放對，不然無法成功套入-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!--順序要放對，不然無法成功套入-->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -185,7 +185,7 @@
         </div>
         <!--desktop mode-->
         <div class="col-6 d-none d-lg-block">
-          <div class="swiper-container mySwiper">
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper ">
               <div class="swiper-slide"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true" alt="yoga-girl" class="rounded-3 card-img-lg"></div>
               <div class="swiper-slide"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga.jpg?raw=true" alt="yoga-girl"  class="rounded-3 card-img-lg"></div>
@@ -294,7 +294,7 @@
     </ul>
   </div>
   <div class="opinion bg-success pt-7 pb-8">
-    <div class="container">
+    <div class="container-fluid">
     <h3 class="text-center pb-6">聽聽他們怎麼說</h3>
     <!--desktop mode-->
     <ul class="row d-none d-lg-flex">
@@ -399,10 +399,10 @@
     </ul>
     <!--table/ phone mode-->
     <div class="d-lg-none d-flex">
-      <div class="swiper mySwiper">
+      <div class="swiper SwiperGroup">
         <div class="swiper-wrapper">
-          <div class="swiper-slide ">
-            <div class="bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
+          <div class="swiper-slide">
+            <div class="opinion-box bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
               <div class="">
                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/user-1.png?raw=true" alt="user-1">
               </div>
@@ -419,8 +419,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide w-30">
-            <div class="bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
+          <div class="swiper-slide">
+            <div class="opinion-box bg-light d-flex align-items-center justify-content-between text-secondary rounded  p-3 ">
                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/user-2.png?raw=true" alt="user-2">
               <div class="card-body text-info lh-base ms-9">
                 <h5 class="card-title fs-6">穎旻<span>Oct 17 2020</span></h5>
@@ -436,7 +436,7 @@
             </div>
           </div>
           <div class="swiper-slide ">
-            <div class="bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
+            <div class="opinion-box bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/user-3.png?raw=true" alt="user-3">
               <div class="card-body text-info lh-base ms-9">
                 <h5 class="card-title fs-6">子琪 <span>Oct 17 2020</span></h5>
@@ -451,8 +451,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide ">
-            <div class="bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
+          <div class="swiper-slide">
+            <div class="opinion-box bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/user-4.png?raw=true" alt="user-4">
               <div class="card-body text-info lh-base ms-9">
                 <h5 class="card-title fs-6">葉子 <span>Oct 17 2020</span></h5>
@@ -468,7 +468,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
+            <div class="opinion-box bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3 ">
                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/user-5.png?raw=true" alt="user-5">
               <div class="card-body text-info lh-base ms-9">
                 <h5 class="card-title fs-6">Ray<span>Oct 17 2020</span></h5>
@@ -484,7 +484,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="bg-light d-flex align-items-center justify-content-between text-secondary rounded p-3">
+            <div class="opinion-box bg-light d-flex align-items-center justify-content-between text-secondary rounded  p-3">
                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/uset-6.png?raw=true" alt="user-6">
               <div class="card-body text-info lh-base ms-9">
                 <h5 class="card-title fs-6">俊儀<span>Oct 17 2020</span></h5>
@@ -541,8 +541,9 @@
 
     
     </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
     
   </body>
