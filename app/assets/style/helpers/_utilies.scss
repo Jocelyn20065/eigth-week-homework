@@ -18,12 +18,16 @@
     object-fit: cover;
     text-align: center;
 }
-.w-40{
-    width: 40%;
+.w-md-40{
+    width:100%;
+    @include media-breakpoint-up(md) {
+        width: 40%;
+      }
 }
 .w-30{
     width:30%;
 }
+
 
 .form-control-c::placeholder { /* CSS 3 標準 */
     color: #C0A4A5;
@@ -50,4 +54,7 @@
     &:hover{
         color: #FFFFFF;
     }
+}
+.z-index-3 {
+    z-index: 3 !important;
 }

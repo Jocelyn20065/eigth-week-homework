@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--順序要放對，不然無法成功套入-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"> <!--順序要放對，不然無法成功套入-->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -28,19 +28,19 @@
         <!--選單內容 -->
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">課程介紹</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="curriculum.html">瑜珈空間</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">當月課表</a>
             </li>
           </ul>
           <ul class="btn-group d-block d-lg-none">
-            <li><a class="" href="#" role="button">立即預約</a></li>
-            <li><a class="" href="#" role="button">聯絡我們</a></li>
+            <li><a class="nav-link" href="#" role="button">立即預約</a></li>
+            <li><a class="nav-link" href="#" role="button">聯絡我們</a></li>
           </ul>
         </div>
         <div class="d-none d-lg-flex justify-content-md-center">
@@ -58,7 +58,7 @@
     <%- contents %>
 
     <footer class="footer bg-secondary  pb-6">
-      <div class="container d-flex justify-content-between py-6">
+      <div class="container-fluid d-block d-md-flex justify-content-md-between py-6">
         <h2 class="text-light fs-3">現在訂閱，獲得課程優惠碼！</h2>
         <div class=" input-group textsubmit">
           <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email"      aria-describedby="basic-addon2">
@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class="border-top border-light w-100"></div>
-      <div class="footer-sub-area container d-flex justify-content-between mt-5">
+      <div class="footer-sub-area container-fluid d-flex justify-content-between mt-5">
         <nav class=" nav flex-column text-light">
           <h2 class="fs-4">DOYOGA</h2>
           <ul>
@@ -74,8 +74,9 @@
             <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
             <li><a class="nav-link text-light px-0" href="#">當月課表</a></li>
           </ul>
+          <div class="copyright text-light d-block d-md-none">© 2021. All Rights Reserved.</div>
         </nav>
-        <div class="copyright text-light align-self-end">© 2021. All Rights Reserved.</div>
+        <div class="copyright text-light d-none d-md-inline align-self-md-end">© 2021. All Rights Reserved.</div>
         <ul class="media-bar d-flex">
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb" class="media-icon-ss me-2"></a></li>
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig" class="media-icon-ss me-2"></a></li>
@@ -89,7 +90,7 @@
     
     </footer>
     <script src="./assets/js/vendors.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
     
   </body>

@@ -1,21 +1,14 @@
 //swiper css (official)
 
-.swiper-container {
+.swiper {
     width: 100%;
     height: 100%;
     overflow:hidden;
   } // 這個一定要加，不然會有x軸
 
 
-// size below according to the design layout
-// .swiper-slide img {
-//     width: 455px;
-//     height:455px;
-//     object-fit: cover;
-//   }
+
   .swiper-slide {
     width: auto !important;
   }
-
-
 
