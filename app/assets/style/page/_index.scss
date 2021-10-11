@@ -1,6 +1,6 @@
 .homebanner{
     background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true') ;
-    max-width: 1280px;
+    width: auto;//這裡不用設定寬度
     height:582px;
     background-position:bottom;
     background-size:cover;
@@ -11,7 +11,3 @@
     object-fit: cover;
 }
 
-.opinion-box{
-    width: 330px;
-    height:116px;
-}
