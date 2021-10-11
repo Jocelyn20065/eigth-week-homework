@@ -15434,6 +15434,24 @@ h4, .h4 {
   padding: 0;
 }
 
+.logo {
+  background-image: url("https://upload.cc/i1/2021/08/22/Xd47n2.png");
+  width: 96px;
+  height: 31px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-white {
+  background-image: url("https://upload.cc/i1/2021/09/12/hF9wtY.png");
+  width: 96px;
+  height: 31px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .card-img-lg {
   height: 150px;
   width: 150px;
@@ -15541,7 +15559,7 @@ h4, .h4 {
 
 .homebanner {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true");
-  max-width: 1280px;
+  width: auto;
   height: 582px;
   background-position: bottom;
   background-size: cover;
@@ -15552,11 +15570,6 @@ h4, .h4 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.opinion-box {
-  width: 330px;
-  height: 116px;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -8,7 +8,7 @@
     <title>reservation</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./assets/style/bootstrap.css"> 已經有在 all.scss 中載入 Bootstrap 就不需要再載入 Bootstrap 的 CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!--順序要放對，不然無法成功套入-->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -18,13 +18,11 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-success bg-success">
       <div class="container justify-content-between">
-        <a class="navbar-brand " href="index.html"><img src="https://upload.cc/i1/2021/08/22/Xd47n2.png" alt="logo"></a>
-        <div class="menu-btn ">
+        <a class="navbar-brand logo d-block" href="index.html"></a>
           <!-- 漢堡選單如下 -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="material-icons text-primary">menu</span>
-          </button>
-        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons text-primary">menu</span>
+        </button>
         <!--選單內容 -->
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
           <ul class="navbar-nav">
@@ -43,7 +41,8 @@
             <li><a class="nav-link" href="#" role="button">聯絡我們</a></li>
           </ul>
         </div>
-        <div class="d-none d-lg-flex justify-content-md-center">
+        <div class="d-none d-lg-flex">
+          <!-- pc版 -->
           <ul class="btn-group">
             <li><a class="btn btn-outline-primary submitbutton me-4 rounded-pill" href="#" role="button">立即預約</a></li>
             <li><a class="btn btn-outline-primary submitbutton rounded-pill" href="#" role="button">聯絡我們</a></li>
@@ -53,14 +52,14 @@
       </div>
     </nav>
 
-    <ul class="text-primary position-fixed top-50 end-0  text-center d-none d-lg-block z-index-3">
+    <ul class="text-primary position-fixed top-50 end-0 text-center d-none d-lg-block z-index-3 translate-middle-y">
     <li class=""><a href="#"><i class="fab fa-facebook fa-3x "></i></a></li>
     <li class="mx-3 my-2"><a href="#"><i class="fab fa-line fa-3x"></i></a></li>
     <li class="mx-3 my-2"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
   </ul>
 
     <div class="main py-8">
-    <div class="container-fluid">
+    <div class="container">
         <h3 class="text-center pb-2">立即預約</h3>
         <ul class="d-flex justify-content-center ps-0 pb-6">
             <li><a href="reservation.html"class="btn btn-primary btn-lg text-light rounded-pill me-2 me-2 px-md-5 fs-6">選擇方案</a></li>
@@ -166,25 +165,26 @@
 </div>
 
     <footer class="footer bg-secondary  pb-6">
-      <div class="container-fluid d-block d-md-flex justify-content-md-between py-6">
+      <div class="container d-block d-md-flex justify-content-md-between py-6">
         <h2 class="text-light fs-3">現在訂閱，獲得課程優惠碼！</h2>
         <div class=" input-group textsubmit">
-          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email"      aria-describedby="basic-addon2">
-            <button class="btn btn-primary submitbutton text-light radius-left-0 radius-right-0" type="button">訂閱</button>
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's email" aria-describedby="basic-addon2">
+            <button class="btn btn-primary submitbutton text-light" type="button">訂閱</button>
         </div>
       </div>
-      <div class="border-top border-light w-100"></div>
-      <div class="footer-sub-area container-fluid d-flex justify-content-between mt-5">
+      <!-- <div class="border-top border-light w-100"></div> -->
+      <hr class="bg-light">
+      <div class="footer-sub-area container d-flex justify-content-between mt-5">
         <nav class=" nav flex-column text-light">
-          <h2 class="fs-4">DOYOGA</h2>
+          <a class="logo-white d-block" href="index.html"></a>
           <ul>
             <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
             <li><a class="nav-link text-light px-0" href="#">課程介紹</a></li>
             <li><a class="nav-link text-light px-0" href="#">當月課表</a></li>
           </ul>
-          <div class="copyright text-light d-block d-md-none">© 2021. All Rights Reserved.</div>
+          <p class="copyright text-light d-block d-md-none">© 2021. All Rights Reserved.</p>
         </nav>
-        <div class="copyright text-light d-none d-md-inline align-self-md-end">© 2021. All Rights Reserved.</div>
+        <p class="copyright text-light d-none d-md-inline align-self-md-end">© 2021. All Rights Reserved.</p>
         <ul class="media-bar d-flex">
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fb" class="media-icon-ss me-2"></a></li>
           <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="ig" class="media-icon-ss me-2"></a></li>
@@ -201,7 +201,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P42Y23XK5T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P42Y23XK5T');
+    </script>
   </body>
 
 </html>
