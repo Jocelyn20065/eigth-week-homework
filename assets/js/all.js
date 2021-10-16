@@ -1,40 +1,65 @@
 "use strict";
 
-$(function () {
-  console.log('Hello Bootstrap5');
-});
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  grabCursor: true
-});
-var swiper = new Swiper(".SwiperGroup", {
-  slidesPerView: 'auto',
-  grid: {
-    rows: 1,
-    //slidesPerColumn: 2, swiper6寫法
-    fill: 'row' //slidesPerColumnFill: 'row',  swiper6寫法
+var demoSwiper = document.querySelector(".demoSwiper");
 
-  },
-  spaceBetween: 10,
-  width: 500,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-      spaceBetween: 30,
-      grid: {
-        rows: 2,
-        //slidesPerColumn: 2, swiper6寫法
-        fill: 'row' //slidesPerColumnFill: 'row',  swiper6寫法
+if (demoSwiper) {
+  var swiper = new Swiper(".demoSwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    grabCursor: true
+  });
+}
 
+var recommandSwiper = document.querySelector(".recommandSwiper");
+
+if (recommandSwiper) {
+  var _swiper = new Swiper(".recommandSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grid: {
+      rows: 3,
+      fill: 'row'
+    },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
+          fill: 'row'
+        }
       },
-      width: 800
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+          fill: 'row'
+        }
+      }
     }
-  }
-});
+  });
+}
+
+var courseSwiper = document.querySelector(".courseSwiper");
+
+if (courseSwiper) {
+  var _swiper2 = new Swiper(".courseSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grid: {
+      rows: 3,
+      fill: 'row'
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3
+      }
+    }
+  });
+}
 //# sourceMappingURL=all.js.map

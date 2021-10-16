@@ -15550,11 +15550,9 @@ h4, .h4 {
 .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
-}
-
-.swiper-slide {
-  width: auto !important;
 }
 
 .homebanner {
