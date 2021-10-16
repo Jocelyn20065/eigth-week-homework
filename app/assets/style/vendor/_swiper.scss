@@ -1,14 +1,11 @@
 //swiper css (official)
 
-.swiper {
+  .swiper {
     width: 100%;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
     overflow:hidden;
-  } // 這個一定要加，不然會有x軸
-
-
-
-  .swiper-slide {
-    width:auto !important;
   }
+
 
